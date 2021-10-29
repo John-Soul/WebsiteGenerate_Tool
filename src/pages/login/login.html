@@ -1,0 +1,51 @@
+<components src="components/header.html" title="Login" name="login"></components>
+<main>
+    <section class="login-page">
+        <section class="login-wrap">
+            <section class="tab">
+                <ul class="tab-nav">
+                    <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+                    <li><a href="#signup" data-toggle="tab">Sign Up</a></li>
+                </ul>
+                <section class="tab-content">
+                    <section class="tab-panel active fade in" id="login">
+                        <form id="loginForm" onsubmit="return false" action="##" method="post">
+                            <section class="input-box">
+                                <input type="text" placeholder="Please input UserName" name="UserName" />
+                            </section>
+                            <section class="input-box">
+                                <input type="password" placeholder="Please input Password" name="Password" />
+                            </section>
+                        </form>
+                        <p class="tips mb-sm passwordError d-none">* passwordError! </p>
+                        <p class="tips mb-sm serveError d-none">* serveError! </p>
+                        <p class="tips mb-sm inputError d-none">* inputError! </p>
+                        <p class="tips mb-sm throwError d-none"></p>
+                        <a class="btn loginBtn" href="javascript:;">Login</a>
+                    </section>
+                    <section class="tab-panel fade" id="signup">
+                        <form id="signupForm" onsubmit="return false" action="##" method="post">
+                            <section class="input-box">
+                                <input type="text" placeholder="Please input UserName" name="UserName" />
+                                <p class="tips mt-sm d-none inputError userError">* userError! </p>
+                            </section>
+                            <section class="input-box">
+                                <input type="password" placeholder="Please input Password" name="Password1" />
+                                <p class="tips mt-sm d-none inputError passwordError">* passwordError! </p>
+                            </section>
+                            <section class="input-box">
+                                <input type="password" placeholder="Please input Password again" name="Password" />
+                                <p class="tips mt-sm d-none inputError repeatError">* repeatError! </p>
+                            </section>
+                        </form>
+                        <p class="tips mb-sm throwError d-none"></p>
+                        <p class="tips mb-sm serveError d-none">* serveError! </p>
+                        <p class="hit mb-sm">Sign up means consent<a href="./private.html">Privacy agreement</a><a href="./policy.html">User agreement</a></p>
+                        <a class="btn signupBtn" href="javascript:;">Sign up Now!</a>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+</main>
+<components src="components/footer.html" name="login"></components>

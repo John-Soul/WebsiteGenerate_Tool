@@ -1,6 +1,6 @@
 {
-  "css/main.css": "css/main.css?v=411c6fea40",
-  "css/main.min.css": "css/main.min.css?v=b3487f6a94",
+  "css/main.css": "css/main.css?v=ef7e5b5fb6",
+  "css/main.min.css": "css/main.min.css?v=cb7ce92ee3",
   "imgs/arrow-right.png": "imgs/arrow-right.png?v=03a902267e",
   "imgs/job-detail-bg.jpg": "imgs/job-detail-bg.jpg?v=5a31de5f55",
   "imgs/job/accounting.jpg": "imgs/job/accounting.jpg?v=ba4a6d6639",
@@ -13,7 +13,6 @@
   "imgs/job/photographer.jpg": "imgs/job/photographer.jpg?v=639310fe68",
   "imgs/job/seller.jpg": "imgs/job/seller.jpg?v=59cf293d5c",
   "imgs/login-bg.jpg": "imgs/login-bg.jpg?v=b903ee29d4",
-  "imgs/logo.png": "imgs/logo.png?v=25e35a9cfc",
   "imgs/search.png": "imgs/search.png?v=931ee71fcf",
   "imgs/spread-detail-bg.jpg": "imgs/spread-detail-bg.jpg?v=2d7274d80a",
   "imgs/spread/app.jpg": "imgs/spread/app.jpg?v=11c632ffe3",
@@ -25,9 +24,5 @@
   "imgs/spread/xianshang.jpg": "imgs/spread/xianshang.jpg?v=95ef0e0af5",
   "imgs/spread/xianxia.jpg": "imgs/spread/xianxia.jpg?v=b71f56432d",
   "imgs/spread/xinxiliu.jpg": "imgs/spread/xinxiliu.jpg?v=daccda0a29",
-  "js/index.js": "js/index.js?v=8971778a9c",
-  "js/jquery.min.js": "js/jquery.min.js?v=f0762319a3",
-  "js/login.js": "js/login.js?v=13a8f2b983",
-  "js/main.js": "js/main.js?v=46e59812ee",
-  "js/main.min.js": "js/main.min.js?v=fc221a3564"
+  "js/jquery.min.js": "js/jquery.min.js?v=f0762319a3"
 }
