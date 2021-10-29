@@ -192,16 +192,19 @@ function _watch(cb) {
 }
 
 function _zip(cb) {
-  let obj;
-  fs.readFile('./dist/version.txt', { flag: 'r+', encoding: 'utf8' }, function (err, data) {
-    if (err) {
-      console.log('Read version.text error!', err)
-    }
-    obj = data && JSON.parse(data)
-    const version = +obj.Build_Version.split('.')[1]
-    obj.Build_Version = '0.' + (version + 1) + '.0'
-    src('./dist/**').pipe(zip('dist.'+ obj.Build_Version +'.zip')).pipe(dest('./'))
-  })
+  // Read & write version file has bug
+  // let obj;
+  // fs.readFile('./dist/version.txt', { flag: 'r+', encoding: 'utf8' }, function (err, data) {
+  //   if (err) {
+  //     console.log('Read version.text error!', err)
+  //   }
+  //   obj = data && JSON.parse(data)
+  //   const version = +obj.Build_Version.split('.')[1]
+  //   obj.Build_Version = '0.' + (version + 1) + '.0'
+  //   src('./dist/**').pipe(zip('dist.'+ obj.Build_Version +'.zip')).pipe(dest('./'))
+  // })
+  const now = Math.floor((new Date()).getTime() / 1000);
+  src('./dist/**').pipe(zip('dist.'+ now +'.zip')).pipe(dest('./'));
   cb()
 }
 
@@ -218,6 +221,6 @@ exports.build = series(
   parallel(html, css, js, js_pages, js_lib, img, font),
   create_ver,
   set_ver,
-  write_ver,
+  // write_ver,
   _zip
 )
