@@ -2,7 +2,7 @@
 
 <p align="center">
   <span>English</span> |
-  <a href="https://github.com/john_soul/SWG_Tool/tree/master/lang/zh/readme.md">中文</a>
+  <a href="https://github.com/John-Soul/WebsiteGenerate_Tool/blob/main/lang/zh/README.md">中文</a>
 </p>
 <p align="center">
  Available for multi page static website generate.
