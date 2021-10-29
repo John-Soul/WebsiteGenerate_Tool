@@ -1,0 +1,24 @@
+<components src="components/header.html" title="{{title}}" name="{{name}}" header></components>
+
+<main>
+    <section class="detail {{name+'-detail'}}">
+        <section class="detail-wrap">
+            <section class="detail-head text-center">
+                <h3>{{heading}}</h3>
+                <h4>DESCRIPTION</h4>
+            </section>
+            <section class="detail-content">
+                <section class="img-box">
+                    <img src="{{imgUrl}}" alt="">
+                </section>
+                <article class="description text-center">
+                    {{each description}}
+                        <p key="{{$index}}">{{$value}}</p>
+                    {{/each}}
+                </article>
+            </section>
+        </section>
+    </section>
+</main>
+
+<components src="components/footer.html" footer name="index"></components>

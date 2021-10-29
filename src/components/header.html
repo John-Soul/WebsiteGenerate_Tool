@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <title>{{title}} - Company name</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    {{if header}}
+    <header>
+      <section class="header-wrap">
+        <section class="d-inline-block">
+          <section class="logo" style="line-height: 52px;">
+            <h2 style="color: #fff;font-size:1.75em;">Company</h2>
+          </section>
+          <nav class="nav">
+            <ul class="clearfix">
+              <li class="{{name === 'index' ? 'active': ''}}"><a href="./index.html">Home</a></li>
+              <li class="{{name === 'job' ? 'active': ''}}"><a href="./job.html">Jobs</a></li>
+              <li class="{{name === 'spread' ? 'active': ''}}"><a href="./spread.html">Spread</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="tools float-right mt-df">
+          <section class="login">
+            <ul class="login-box">
+              <li class="unlisted"><a href="login.html">Login</a></li>
+              <li class="unlisted"><a href="login.html">Sign up</a></li>
+              <li class="listed username d-none"><a href="javascript:;"></a></li>
+              <li class="listed d-none"><a href="javascript:;" onclick="logout()">Logout</a></li>
+            </ul>
+          </section>
+          <section class="search">
+            <input type="text" placeholder="Please Input something." />
+            <a class="btn" href="javascript:;">
+              <img src="imgs/search.png" alt="" />
+            </a>
+          </section>
+        </section>
+      </section>
+    </header>
+    {{/if}}

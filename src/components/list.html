@@ -1,0 +1,43 @@
+<components src="components/header.html" title="Jobs" name="{{name}}" header></components>
+
+<main>
+  <section class="heading">
+    <section class="heading-wrap">
+      <section class="heading-title">
+        <h3>{{title}}</h3>
+        <h4>{{subTitle}}</h4>
+      </section>
+    </section>
+  </section>
+  <section class="list job">
+    <section class="list-wrap clearfix">
+      <section class="list-nav">
+        <ul>
+          <li class="active"><span>ALL</span></li>
+          {{each typeList}}
+            <li key="{{$index}}"><span>{{$value}}</span></li>
+          {{/each}}
+        </ul>
+      </section>
+      <section class="job-content list-content float-right">
+        <ul class="clearfix">
+            {{each dataList}}
+            <li key="{{$index}}">
+              <a href="{{$value.link}}">
+                <section class="img-box"><img src="{{$value.imgUrl}}" alt="" /></section>
+                <section class="description">
+                    <h4>{{$value.name}}</h4>
+                    <section class="arrow">
+                        <img src="/imgs/arrow-right.png" alt="" />
+                    </section>
+                </section>
+              </a>
+            </li>
+            {{/each}}
+        </ul>
+      </section>
+    </section>
+  </section>
+</main>
+
+<components src="components/footer.html" footer></components>
